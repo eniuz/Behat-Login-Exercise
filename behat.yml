@@ -1,5 +1,10 @@
 default:
     extensions:
+        Behat\Symfony2Extension\Extension:
+        mink_driver: true
+        kernel:
+            env: test
+            debug: true
         Behat\MinkExtension\Extension:
             goutte: ~
             selenium2: ~
